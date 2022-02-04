@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verano | Parallax</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="banner">
+        <div class="container">
+            <div id="scene">
+                <h2 id="text">
+                    <span data-depth-y="2">V</span>
+                    <span data-depth-y="-6">E</span>
+                    <span data-depth-y="5">R</span>
+                    <span data-depth-y="-8">A</span>
+                    <span data-depth-y="-3">N</span>
+                    <span data-depth-y="6">O</span>
+                </h2>
+                <div class="layer zIndexAbove" data-depth-y="-0.5"><img src="source/img1.png" alt=""></div>
+                <div class="layer zIndexAbove" data-depth-y="0.75"><img src="source/img2.png" alt=""></div>
+                <div class="layer zIndexAbove" data-depth-y="1"><img src="source/img3.png" alt=""></div>
+                <div class="layer" data-depth-y="-0.25"><img src="source/img4.png" alt=""></div>
+                <div class="layer" data-depth-y="0.625"><img src="source/img5.png" alt=""></div>
+                <div class="layer" data-depth-y="-0.375"><img src="source/img6.png" alt=""></div>
+                <div class="layer zIndexAbove" data-depth-y="0.5"><img src="source/img7.png" alt=""></div>
+            </div>
+        </div>
+        <div class="credit">Icons made by&nbsp<a href="https://www.freepik.com" title="Freepik">Freepik</a>&nbspfrom&nbsp<a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script>
+        var text = document.getElementById('text');
+        var parallaxInstance = new Parallax(text);
+        var scene = document.getElementById('scene');
+        var parallaxInstance = new Parallax(scene);
+    </script>
+</body>
+</html>
